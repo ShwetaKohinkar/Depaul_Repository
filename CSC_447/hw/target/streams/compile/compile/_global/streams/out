@@ -1,0 +1,27 @@
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E040] Syntax Error: /Users/shweta/College_Assignments/CSC_447/hw/src/main/scala/fp3.scala:253:0 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m253 |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |[31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |'}' expected, but eof found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /Users/shweta/College_Assignments/CSC_447/hw/src/main/scala/fp3.scala:252:3 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m252 |[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0m    |   [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |   Found:    Unit[0m
+[0m[[0m[31merror[0m] [0m[0m    |   Required: List[(Int, X)][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/shweta/College_Assignments/CSC_447/hw/src/main/scala/fp3.scala:225:2 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m225 |[0m  [33mdef[0m [36msplitAt[0m[[35mX[0m]([36mn[0m: [35mInt[0m, [36mxs[0m: [35mList[X][0m): ([35mList[X][0m, [35mList[X][0m) =[0m
+[0m[[0m[31merror[0m] [0m[0m    |  [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/shweta/College_Assignments/CSC_447/hw/src/main/scala/fp3.scala:226:4 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m226 |[0m    (n,xs) [33mmatch[0m{[0m
+[0m[[0m[31merror[0m] [0m[0m    |    [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |    Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/shweta/College_Assignments/CSC_447/hw/src/main/scala/fp3.scala:246:2 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m246 |[0m  [33mdef[0m [36mallDistinct[0m([36mxs[0m: [35mList[Int][0m): [35mBoolean[0m =[0m
+[0m[[0m[31merror[0m] [0m[0m    |  [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/shweta/College_Assignments/CSC_447/hw/src/main/scala/fp3.scala:248:4 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m248 |[0m    xs [33mmatch[0m{[0m
+[0m[[0m[31merror[0m] [0m[0m    |    [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |    Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m

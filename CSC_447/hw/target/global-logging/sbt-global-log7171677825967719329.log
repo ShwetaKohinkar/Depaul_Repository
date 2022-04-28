@@ -1,0 +1,22 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly fp1tests, Some(0f0c1bf3-468b-4758-b696-b37f63820081), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/shweta/College_Assignments/CSC_447/hw/target/scala-3.1.0/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfp1tests:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EX01 - factTest[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EX02 - fib[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EX03 - p1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EX04 - t1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EX05 - swap[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EX06 - sum[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EX07 - sumTail[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EX08 - maxList[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EX09 - maxTailAux[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EX10 - otpu[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 113 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 10, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Apr 13, 2022, 2:01:29 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

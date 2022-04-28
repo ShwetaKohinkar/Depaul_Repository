@@ -1,0 +1,4 @@
+[debug] [hw-test] Classpath dependencies List()
+[debug] [hw-test] Dependencies from configurations List(hw)
+[debug] Bloop wrote the configuration of project 'hw-test' to '/Users/shweta/College Assignments/CSC 447 Prog Lang/hw/.bloop/hw-test.json'
+[success] Generated .bloop/hw-test.json

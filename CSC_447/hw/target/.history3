@@ -1,0 +1,70 @@
+1649778903536:testOnly fp1tests -- -n fp1ex01
+1649781685392:testOnly fp1tests -- -n fp1ex02
+1649782640803:testOnly fp1tests -- -n fp1ex03
+1649782827535:testOnly fp1tests -- -n fp1ex04
+1649782928198:testOnly fp1tests -- -n fp1ex05
+1649783473551:testOnly fp1tests -- -n fp1ex06
+1649787765844:testOnly fp1tests -- -n fp1ex07
+1649791802120:testOnly fp1tests -- -n fp1ex05
+1649792021688:testOnly fp1tests -- -n fp1ex03
+1649792082038:testOnly fp1tests -- -n fp1ex05
+1649792087941:testOnly fp1tests -- -n fp1ex06
+1649792558339:scala
+1649792564439:testOnly fp1tests -- -n fp1ex06
+1649866700674:testOnly fp1tests -- -n fp1ex07
+1649866704994:testOnly fp1tests -- -n fp1ex08
+1649867062314:testOnly fp1tests -- -n fp1ex09
+1649867130914:testOnly fp1tests -- -n fp1ex08
+1649867285614:testOnly fp1tests -- -n fp1ex09
+1649867300807:testOnly fp1tests -- -n fp1ex08
+1649867327701:testOnly fp1tests -- -n fp1ex09
+1649867329885:testOnly fp1tests -- -n fp1ex08
+1649867803604:testOnly fp1tests -- -n fp1ex09
+1649868124874:testOnly fp1tests -- -n fp1ex010
+1649868130017:testOnly fp1tests -- -n fp1ex10
+1649869886303:testOnly fp1tests -- -n fp1ex010
+1649869923267:testOnly fp1tests -- -n fp1ex10
+1649869929719:testOnly fp1tests
+1649876500505:testOnly fp1tests -- -n fp1ex10
+1650385887323:testOnly fptests -- -n pfex01
+1650386229862:testOnly fp1tests -- -n fp2ex01
+1650386257723:testOnly fp2tests -- -n pfex01
+1650386268537:testOnly fp2tests -- -n fp2ex01
+1650388383854:testOnly fp2tests -- -n fp2ex02
+1650389307219:testOnly fp2tests -- -n fp2ex03
+1650392465532:testOnly fp2tests -- -n fp2ex04
+1650392689726:testOnly fp2tests -- -n fp2ex05
+1650393120397:testOnly fp2tests -- -n fp2ex06
+1650393148022:testOnly fp2tests
+1650403650862:testOnly fp2tests -- -n fp2ex09
+1650404331985:testOnly fp2tests -- -n fp2ex10
+1650404560359:testOnly fp2tests
+1650404992022:testOnly fp2tests -- -n fp2ex10
+1650405030967:testOnly fp2tests
+1650405281864:testOnly fp2tests -- -n fp2ex03
+1650471559251:testOnly fp2tests
+1650986628694:testOnly fp3tests -- -n fp3ex01
+1650987148821:testOnly fp3tests -- -n fp3ex02
+1650988020135:clear
+1650988025650:testOnly fp3tests -- -n fp3ex02
+1650989459947:testOnly fp3tests -- -n fp3ex03
+1650990869207:testOnly fp3tests -- -n fp3ex04
+1650991545598:testOnly fp3tests -- -n fp3ex05
+1650991778893:testOnly fp3tests -- -n fp3ex06
+1650992041144:testOnly fp3tests -- -n fp3ex07
+1650993152321:testOnly fp3tests -- -n fp3ex08
+1650995111063:testOnly fp3tests -- -n fp3ex09
+1650995141714:testOnly fp3tests -- -n fp3ex10
+1650995166054:testOnly fp3tests -- -n fp3ex09
+1650995173058:testOnly fp3tests -- -n fp3ex10
+1650995191568:testOnly fp3tests -- -n fp3ex010
+1650995213046:testOnly fp3tests -- -n fp3ex10
+1650995218715:testOnly fp3tests
+1651001575162:testOnly fp3tests -- -n fp3ex01
+1651001927234:testOnly fp3tests -- -n fp3ex02
+1651002074845:testOnly fp3tests -- -n fp3ex03
+1651002243385:testOnly fp3tests -- -n fp3ex07
+1651002551199:testOnly fp3tests -- -n fp3ex08
+1651002956212:testOnly fp3tests -- -n fp3ex09
+1651003145632:testOnly fp3tests -- -n fp3ex10
+1651003150153:testOnly fp3tests
