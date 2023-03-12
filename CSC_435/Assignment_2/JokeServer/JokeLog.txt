@@ -1,0 +1,648 @@
+
+********** Server Log from primary server *********************
+
+
+Last login: Sat Jan 21 22:15:01 on ttys003
+shweta@Shwetas-MBP JokeServer % javac *.java
+shweta@Shwetas-MBP JokeServer % java JokeServer
+Shweta Kohinkar's Joke Server 1.0 Starting up, listening at port 4545
+Shweta Kohinkar's Joke Server 1.0 Starting up, listening at port 5050
+ServerSocket awaiting JokeClientAdmin connections on port: 5050
+ServerSocket awaiting JokeClient connections on port: 4545
+Current Mode: Joke
+Connection from Socket[addr=/127.0.0.1,port=52761,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52762,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52763,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52764,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52765,localport=5050]
+Current Mode after JokeClientAdmin's Connection: Proverb
+Connection from Socket[addr=/127.0.0.1,port=52766,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52767,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52768,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52769,localport=4545]
+
+
+********** Logs from client console connected to primary server showing a complete cycle of Joke *********************
+
+
+
+Last login: Sat Jan 21 22:15:03 on ttys004
+shweta@Shwetas-MBP JokeServer % java JokeClient
+Enter your name:
+shweta
+Hi shweta
+Server one: localhost, port 4545
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+JC shweta: What falls in winter but never gets hurt? Snow.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+JD shweta: How do we know that the ocean is friendly? It waves
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+JA shweta: How do you make a lemon drop? Just let it fall.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+JB shweta: What kind of tree fits in your hand? A palm tree
+JOKE CYCLE COMPLETED
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+********** Logs from AdminClient console, changing server mode to proverb *********************
+
+
+Last login: Sat Jan 21 22:15:05 on ttys005
+shweta@Shwetas-MBP JokeServer % java JokeClientAdmin
+Server one: localhost, port 5050
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+Current Mode on JokeServer: Proverb
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+
+
+********** Logs from client console connected to primary server showing a complete cycle of Proverb *********************
+
+
+PD shweta: Time waits for no one.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PC shweta: You can’t have your cake and eat it too.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PB shweta: If it ain’t broke, don’t fix it.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PA shweta: When there’s smoke, there’s fire.
+PROVERB CYCLE COMPLETED
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+********** Logs from Client console showing Interleaving state of Proverb *********************
+
+Logs from Client console showing Interleaving state of Proverb
+
+PA shweta: When there’s smoke, there’s fire.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PD shweta: Time waits for no one.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PC shweta: You can’t have your cake and eat it too.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+
+********** Logs from Admin console after changing the mode to Joke *********************
+
+
+Current Mode on JokeServer: Joke
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+
+######################################
+
+Logs from Client console to show interleaving scenario for Jokes
+
+JD shweta: How do we know that the ocean is friendly? It waves
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+JB shweta: What kind of tree fits in your hand? A palm tree
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+JA shweta: How do you make a lemon drop? Just let it fall.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+
+********** Logs from Admin console after changing server mode back to Proverb *********************
+
+Logs from Admin console after changing server mode back to Proverb
+
+Current Mode on JokeServer: Proverb
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+
+********** Logs from Client console showing interleaved Proverb cycle is completed *********************
+
+
+PB shweta: If it ain’t broke, don’t fix it.
+PROVERB CYCLE COMPLETED
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+
+********** Logs from Admin console after changing server mode back to Joke *********************
+
+
+Current Mode on JokeServer: Joke
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+********** Logs from Client console showing interleaved Joke cycle is completed *********************
+
+
+Logs from Client console showing interleaved Joke cycle is completed
+
+JC shweta: What falls in winter but never gets hurt? Snow.
+JOKE CYCLE COMPLETED
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+
+***************** Logs from Secondary server *********************
+
+
+Logs from Secondary server 
+
+shweta@Shwetas-MBP JokeServer % java JokeServer secondary
+<S2> Shweta Kohinkar's Joke Server 1.0 Starting up, listening at port 4546
+<S2> Shweta Kohinkar's Joke Server 1.0 Starting up, listening at port 5051
+<S2> ServerSocket awaiting JokeClient connections on port: 4546
+<S2> ServerSocket awaiting JokeClientAdmin connections on port: 5051
+<S2> Current Mode: Joke
+<S2> Connection from Socket[addr=/127.0.0.1,port=52785,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52786,localport=4546]
+
+***************** Logs from Client requests on secondary server *********************
+
+
+shweta@Shwetas-MBP JokeServer % java JokeClient localhost localhost
+Enter your name:
+shweta
+Hi shweta
+Server one: localhost, port 4545 Server two: localhost, port 4546
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+s
+<S2> Now communicating with: localhost, port: 4546
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> JA shweta: How do you make a lemon drop? Just let it fall.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> JD shweta: How do we know that the ocean is friendly? It waves
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+    
+***************** Logs for Secondary Server *********************
+
+Last login: Sat Jan 21 22:53:12 on ttys003
+shweta@Shwetas-MBP JokeServer % java JokeServer secondary               
+<S2> Shweta Kohinkar's Joke Server 1.0 Starting up, listening at port 5051
+<S2> Shweta Kohinkar's Joke Server 1.0 Starting up, listening at port 4546
+<S2> ServerSocket awaiting JokeClient connections on port: 4546
+<S2> ServerSocket awaiting JokeClientAdmin connections on port: 5051
+<S2> Current Mode: Joke
+<S2> Connection from Socket[addr=/127.0.0.1,port=52965,localport=5051]
+<S2> Current Mode after JokeClientAdmin's Connection: Proverb
+<S2> Connection from Socket[addr=/127.0.0.1,port=52966,localport=5051]
+<S2> Current Mode after JokeClientAdmin's Connection: Joke
+<S2> Connection from Socket[addr=/127.0.0.1,port=52978,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52979,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52980,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52981,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52982,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52984,localport=5051]
+<S2> Current Mode after JokeClientAdmin's Connection: Proverb
+<S2> Connection from Socket[addr=/127.0.0.1,port=52985,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52986,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52987,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52988,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52989,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52990,localport=5051]
+<S2> Current Mode after JokeClientAdmin's Connection: Joke
+<S2> Connection from Socket[addr=/127.0.0.1,port=52991,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52992,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52993,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52994,localport=5051]
+<S2> Current Mode after JokeClientAdmin's Connection: Proverb
+<S2> Connection from Socket[addr=/127.0.0.1,port=52995,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52996,localport=4546]
+<S2> Connection from Socket[addr=/127.0.0.1,port=52997,localport=4546]
+
+***************** Logs for Primary Server *********************
+
+Last login: Sat Jan 21 22:52:40 on ttys002
+shweta@Shwetas-MBP JokeServer % javac *.java
+shweta@Shwetas-MBP JokeServer % java JokeServer
+Shweta Kohinkar's Joke Server 1.0 Starting up, listening at port 4545
+Shweta Kohinkar's Joke Server 1.0 Starting up, listening at port 5050
+ServerSocket awaiting JokeClient connections on port: 4545
+ServerSocket awaiting JokeClientAdmin connections on port: 5050
+Current Mode: Joke
+Connection from Socket[addr=/127.0.0.1,port=52963,localport=5050]
+Current Mode after JokeClientAdmin's Connection: Proverb
+Connection from Socket[addr=/127.0.0.1,port=52964,localport=5050]
+Current Mode after JokeClientAdmin's Connection: Joke
+Connection from Socket[addr=/127.0.0.1,port=52967,localport=5050]
+Current Mode after JokeClientAdmin's Connection: Proverb
+Connection from Socket[addr=/127.0.0.1,port=52968,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52969,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52970,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52971,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52972,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52973,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52974,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52975,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52976,localport=4545]
+Connection from Socket[addr=/127.0.0.1,port=52977,localport=4545]
+
+
+***************** Logs for Client 1 *********************
+
+shweta@Shwetas-MBP JokeServer % java JokeClient localhost localhost 
+Enter your name:
+sk
+Hi sk
+Server one: localhost, port 4545 Server two: localhost, port 4546
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PC sk: You can’t have your cake and eat it too.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PA sk: When there’s smoke, there’s fire.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PB sk: If it ain’t broke, don’t fix it.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PD sk: Time waits for no one.
+PROVERB CYCLE COMPLETED
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PB sk: If it ain’t broke, don’t fix it.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+s
+<S2> Now communicating with: localhost, port: 4546
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> JB sk: What kind of tree fits in your hand? A palm tree
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> JA sk: How do you make a lemon drop? Just let it fall.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> PB sk: If it ain’t broke, don’t fix it.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> PD sk: Time waits for no one.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> PC sk: You can’t have your cake and eat it too.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> JD sk: How do we know that the ocean is friendly? It waves
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> JC sk: What falls in winter but never gets hurt? Snow.
+<S2> JOKE CYCLE COMPLETED
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> PA sk: When there’s smoke, there’s fire.
+<S2> PROVERB CYCLE COMPLETED
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+***************** Logs for Client 2 *********************
+
+Last login: Sat Jan 21 22:53:14 on ttys004
+shweta@Shwetas-MBP JokeServer % java JokeClient localhost localhost
+Enter your name:
+shweta
+Hi shweta
+Server one: localhost, port 4545 Server two: localhost, port 4546
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PB shweta: If it ain’t broke, don’t fix it.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PA shweta: When there’s smoke, there’s fire.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PD shweta: Time waits for no one.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PC shweta: You can’t have your cake and eat it too.
+PROVERB CYCLE COMPLETED
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+PC shweta: You can’t have your cake and eat it too.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+s
+<S2> Now communicating with: localhost, port: 4546
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> JD shweta: How do we know that the ocean is friendly? It waves
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> JC shweta: What falls in winter but never gets hurt? Snow.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> JA shweta: How do you make a lemon drop? Just let it fall.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> PA shweta: When there’s smoke, there’s fire.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> PB shweta: If it ain’t broke, don’t fix it.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> JB shweta: What kind of tree fits in your hand? A palm tree
+<S2> JOKE CYCLE COMPLETED
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> PD shweta: Time waits for no one.
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+<S2> PC shweta: You can’t have your cake and eat it too.
+<S2> PROVERB CYCLE COMPLETED
+Menu:
+1.Press 'enter key' to get next joke or proverb.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end:
+
+
+***************** Logs for ClientAdmin *********************
+
+Last login: Sat Jan 21 22:53:14 on ttys005
+shweta@Shwetas-MBP JokeServer % java JokeClientAdmin localhost localhost
+Server one: localhost, port 5050 Server two: localhost, port 5051
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+Current Mode on JokeServer: Proverb
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+Current Mode on JokeServer: Joke
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+s
+<S2> Now communicating with: localhost, port: 5051
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+<S2> Current Mode on JokeServer: Proverb
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+<S2> Current Mode on JokeServer: Joke
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+s
+Now communicating with: localhost, port: 5050
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+Current Mode on JokeServer: Proverb
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+s
+<S2> Now communicating with: localhost, port: 5051
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+s
+Now communicating with: localhost, port: 5050
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+s
+<S2> Now communicating with: localhost, port: 5051
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+<S2> Current Mode on JokeServer: Proverb
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+<S2> Current Mode on JokeServer: Joke
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+<S2> Current Mode on JokeServer: Proverb
+
+Menu:
+1. Press 'enter key' to change Joke or Proverb Mode.
+2. Enter 's' to switch server.
+3. Enter 'quit' to end.
+4. Enter 'shutdown' to shutdown
+
+
+
